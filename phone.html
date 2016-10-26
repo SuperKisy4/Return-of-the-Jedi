@@ -1,0 +1,38 @@
+<html>
+<head>
+		<meta charset="UTF-8">
+		<title>phone nomber</title>
+		<script language="JavaScript">
+
+		function Check () {
+
+				
+			var dima = "+375298294998";
+			var sergey = "+375298639945";
+
+			answer = document.getElementById("answer").value
+
+			if (answer == dima){ 
+				alert('dima');
+				}
+
+			else if (answer == sergey){
+				alert('sergey');
+			}
+			else {
+				alert('Anonim');		
+			}
+		}
+					
+				
+		</script>
+	</head>
+	<body>
+	<h3>Number:</h3>
+		<b>Введите номер телефона</b><br>
+		Ответ: <input type="text" id="answer" size=16 maxlength=16>
+		<button name="answ" onclick="Check()">Answer</button>
+	</body>
+
+</html>
+

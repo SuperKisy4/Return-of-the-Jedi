@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Money converter</title>
+		<script language="JavaScript">
+
+			function calculate(){
+				
+				var dollar = 2;
+				var euro = 2.1;
+
+				var rub = document.getElementById("rubbles").value
+
+				document.getElementById('dollars').innerHTML = rub / dollar;
+				document.getElementById('euros').innerHTML = rub / euro;
+			}
+			
+		</script>
+	</head>
+
+	<body>
+		<b>Введите рубли:</b><input type="text" id="rubbles" size=8 maxlength=8><br>
+		<button name="convert" onclick="calculate()">Convert</button><br><br>
+
+		<b>В долларах: <div id="dollars">0</div>
+		<b>В евро: <div id="euros">0</div>
+	</body>
+</html>

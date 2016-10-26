@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Math</title>
+		<script language="JavaScript">
+			function Calculate(){
+				//y=a*x^2+b*x+c,
+				var a = 2;
+				var b = -1;
+				var c = 4;
+				var x = document.getElementById("input_x").value
+
+				var y;
+
+				y = a*x^2+b*x+c
+
+				alert("y=" + a + "*" + x + "^2 +" + b + "*" + x + "+" + c);
+			}
+		</script>
+	</head>
+
+	<body>
+		<b>Введите x:</b><input type="text" id="input_x" size=4 maxlength=4><br>
+		<button name="answ" onclick="Calculate()">Calculate</button>
+	</body>
+</html>

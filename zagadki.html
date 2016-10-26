@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>First Serega Page</title>
+		<script language="JavaScript">
+			function Check() {
+
+				var counter = 0;
+
+				answer = document.getElementById("answer1").value
+				if (answer == 'Замок'){
+					counter = counter + 1;
+				}
+
+				answer = document.getElementById("answer2").value
+				if (answer == 'Огурец'){
+					counter = counter + 1;
+				}
+
+
+				answer = document.getElementById("answer3").value
+				if (answer == 'Капуста'){
+					counter = counter + 1;
+				}
+
+				alert(counter);
+			}
+		</script>
+	</head>
+	<body>
+	<h3>Загадки:</h3>
+		<b>Не лает, не кусает, а в дом не пускает</b><br>
+		Ответ: <input type="text" id="answer1" size=16 maxlength=16><br><br>
+
+		<b>Без окон без дверей полна горница людей</b><br>
+		Ответ: <input type="text" id="answer2" size=16 maxlength=16><br><br>
+
+		<b>Сто одежек и все без застежек</b><br>
+		Ответ: <input type="text" id="answer3" size=16 maxlength=16><br><br>
+
+		<br><button name="answ" onclick="Check()">Answer</button>
+	</body>
+</html>
