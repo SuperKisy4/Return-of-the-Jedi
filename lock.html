@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>First Serega Page</title>
+		<script language="JavaScript">
+			function Check() {
+				answer = document.getElementById("answer").value
+
+				if (answer == 'Замок'){
+					alert('Правильно!');
+				}
+				else
+					alert('Попробуйте еще раз!');
+			}
+		</script>
+	</head>
+	<body>
+	<h3>Загадка:</h3>
+		<b>Не лает, не кусает, а в дом не пускает</b><br>
+		Ответ: <input type="text" id="answer" size=16 maxlength=16>
+		<button name="answ" onclick="Check()">Answer</button>
+	</body>
+</html>
